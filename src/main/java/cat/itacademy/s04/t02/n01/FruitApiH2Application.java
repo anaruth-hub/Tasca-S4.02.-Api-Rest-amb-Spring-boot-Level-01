@@ -9,5 +9,4 @@ public class FruitApiH2Application {
     public static void main(String[] args) {
         SpringApplication.run(FruitApiH2Application.class, args);
     }
-
 }
