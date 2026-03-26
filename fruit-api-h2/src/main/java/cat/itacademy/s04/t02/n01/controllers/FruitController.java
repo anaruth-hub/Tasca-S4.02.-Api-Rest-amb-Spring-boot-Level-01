@@ -32,20 +32,20 @@ public class FruitController {
     }
 
     @GetMapping("/{id}")
-    public ResponseEntity<FruitResponseDto> getFruitById(@PathVariable Long id) {
+    public ResponseEntity<FruitResponseDto> getFruitById(@PathVariable("id") Long id) {
         return ResponseEntity.ok(fruitService.getFruitById(id));
     }
 
     @PutMapping("/{id}")
     public ResponseEntity<FruitResponseDto> updateFruit(
-            @PathVariable Long id,
+            @PathVariable("id") Long id,
             @Valid @RequestBody FruitRequestDto requestDto
     ) {
         return ResponseEntity.ok(fruitService.updateFruit(id, requestDto));
     }
 
     @DeleteMapping("/{id}")
-    public ResponseEntity<Void> deleteFruit(@PathVariable Long id) {
+    public ResponseEntity<Void> deleteFruit(@PathVariable("id") Long id) {
         fruitService.deleteFruit(id);
         return ResponseEntity.noContent().build();
     }
