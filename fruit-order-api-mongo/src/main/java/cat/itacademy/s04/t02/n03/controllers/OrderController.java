@@ -41,7 +41,8 @@ public class OrderController {
             @PathVariable("id") String id,
             @Valid @RequestBody OrderRequestDto requestDto
     ) {
-        return ResponseEntity.ok(orderService.updateOrder(id, requestDto));
+        OrderResponseDto updatedOrder = orderService.updateOrder(id, requestDto);
+        return ResponseEntity.ok(updatedOrder);
     }
 
     @DeleteMapping("/{id}")
