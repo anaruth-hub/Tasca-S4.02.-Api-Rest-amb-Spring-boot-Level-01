@@ -311,20 +311,3 @@ Bootcamp project for Java & Spring Framework 2025–2026
 
 
 ---
-
-# Qué haría yo para cerrar ya
-
-## 1. Validación manual mínima final
-No hace falta repetir todo Postman, pero sí una revisión rápida final:
-
-- Nivel 1: un `GET` y un `POST`
-- Nivel 2: un `POST /providers`, un `POST /fruits` y el `DELETE` con `400`
-- Nivel 3: un `POST /orders` y un `POST /orders` con fecha inválida
-
-Eso te deja tranquila y profesionalmente cubierta.
-
-## 2. Guardar README padre
-Crea o edita:
-
-```powershell id="mn6tgx"
-ni .\README.md
